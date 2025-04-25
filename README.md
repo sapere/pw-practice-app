@@ -22,3 +22,10 @@ When prompted, select the following options:
 3. **Add a GitHub Actions workflow?**: `Yes`
 4. **Install Playwright browsers?**: `Yes`
 
+### To run the app open a terminal, navigate to repo root directory ( pw-practice-app dir ) and run the follwing:
+
+```bash
+npm start
+```
+If all went well, good you should get :
+"✔ Compiled successfully." and you can open the app at http://localhost:4200/ 
