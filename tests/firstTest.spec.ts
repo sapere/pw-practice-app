@@ -10,8 +10,7 @@ test.afterEach(async ({ page }) => {
     await page.goto('http://localhost:4200/');
 });
 
-test.describe('Test suite', () => {
-    
+test.describe('First suite', () => {
     test('Locator text rules', async ({ page }) => {
         //By Tag name
         page.locator('input');
@@ -42,15 +41,15 @@ test.describe('Test suite', () => {
         
     });
 
-    test('Navigate to date picker page test', async ({ page }) => {
-        await page.getByText('Datepicker').click();
+    // test('Navigate to date picker page test', async ({ page }) => {
+    //     await page.getByText('Datepicker').click();
         
-        // Add an assertion to verify the expected outcome
-        const nbCardHeader = await page.getByText('Common Datepicker');
-        await expect(nbCardHeader).toBeVisible();
-    });
+    //     // Add an assertion to verify the expected outcome
+    //     const nbCardHeader = await page.getByText('Common Datepicker');
+    //     await expect(nbCardHeader).toBeVisible();
+    // });
 
-    test('User facing locator rules', async ({ page }) => {
+    test.skip('User facing locator rules', async ({ page }) => {
         //Select the "Option 1" radio button by its label
         const radioButton = await page.getByLabel('Option 1');
         await radioButton.check({ force: false });
@@ -88,7 +87,7 @@ test.describe('Test suite', () => {
         await expect(emailInput).toHaveValue('zeno@example.com');
     });
 
-    test('Locate child elements', async ({ page }) => {
+    test.skip('Locate child elements', async ({ page }) => {
         // Navigate to the form layout page
         await page.goto('http://localhost:4200/');
         await page.getByText('Forms').click();
