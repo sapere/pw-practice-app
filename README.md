@@ -1,6 +1,24 @@
 ### Ngx-Admin Angular 14 application from akveo.com and bondar-artem 
 
-This is modified and more lightweight version of original application to practice UI Automation with Playwright.
+This is a modified and lightweight version of the original application, designed for practicing UI Automation with Playwright.
 
-The original repos are here: https://github.com/akveo/ngx-admin and https://github.com/bondar-artem/pw-practice-app
+### Original Repositories
+
+- [Ngx-Admin by Akveo](https://github.com/akveo/ngx-admin)
+- [Playwright Practice App by bondar-artem](https://github.com/bondar-artem/pw-practice-app)
+
+### Setup Instructions for installing playwright 
+
+To set up the project, run the following command:
+
+```bash
+npm init playwright@latest --force
+```
+
+When prompted, select the following options:
+
+1. **Where to put your end-to-end tests?**: `.` (current directory)
+2. **Choose a language**: `TypeScript`
+3. **Add a GitHub Actions workflow?**: `Yes`
+4. **Install Playwright browsers?**: `Yes`
 
