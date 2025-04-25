@@ -48,9 +48,11 @@ You can then open the app at [http://localhost:4200/](http://localhost:4200/).
 
 ### Docker Commands
 
+Make sure docker is installed on your system .
+
 #### Build the Docker Image
 
-Run the following command to build the Docker image:
+Run the following command to build the Docker image that has npm and playwrigth installed:
 
 ```bash
 docker build -t firsttest-test .
@@ -58,7 +60,7 @@ docker build -t firsttest-test .
 
 #### Start the Application with Docker Compose
 
-Use the following command to build, start the application and run the tests:
+Use the following command to build, start the web application and then run the tests:
 
 ```bash
 docker-compose up --build
