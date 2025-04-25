@@ -58,7 +58,7 @@ docker build -t firsttest-test .
 
 #### Start the Application with Docker Compose
 
-Use the following command to build and start the application:
+Use the following command to build, start the application and run the tests:
 
 ```bash
 docker-compose up --build
