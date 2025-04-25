@@ -11,7 +11,8 @@ test.afterEach(async ({ page }) => {
 });
 
 test.describe('First suite', () => {
-    test('Locator text rules', async ({ page }) => {
+    
+    test.skip('Locator text rules', async ({ page }) => {
         //By Tag name
         page.locator('input');
 

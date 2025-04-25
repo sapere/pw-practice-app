@@ -1,0 +1,15 @@
+# This is a Docker Compose file that defines a service for running Playwright tests.
+# It uses a custom Docker image built from a Dockerfile in the current directory.
+# The service is named "playwright-test" and runs the command "npm run firstTest-chrome".
+# The service mounts two volumes: one for the Playwright report and another for test results.
+
+services:
+  playwright-test:
+    image: playwright-test
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    command: npm run firstTest-chrome
+    volumes:
+      - ./playwright-report:/app/playwright-report
+      - ./test-results/:/app/test-results
